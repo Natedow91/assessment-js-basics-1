@@ -5,11 +5,15 @@ slice method. */
 const faveColors = ['red', 'green', 'black']
 
 //CODE HERE
+let colorCopy = faveColors.slice(0, 3)
+  
 
 //////////////////PROBLEM 2////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the 
 push method. */
+colorCopy.push('Blue')
 
+console.log(colorCopy)
 //CODE HERE
 
 //////////////////PROBLEM 3////////////////////
@@ -21,12 +25,15 @@ push method. */
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+let middleNums = numbers.splice(1, 3)
 
+console.log(middleNums)
 
 //////////////////PROBLEM 4////////////////////
 /* 
   Create an empty array called 'answers'.
-  Using a for loop, loop over the array called 'bigOrSmallArray', and check to see if the 
+  Using a for loop, loop over the array called 'bigOrSmallArray', and 
+  check to see if the 
   number in the array is GREATER than 100. 
   If it is, push 'big' as a string to the answers array. 
   If the number is LESS than or EQUAL to 100, push 'small' as a string 
@@ -36,3 +43,10 @@ const numbers = [1, 2, 3, 4, 5]
 const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 
 // CODE HERE
+for (let i = 0; i < bigOrSmallArray.length; i++) {
+  if (bigOrSmallArray[i] <= 100) {
+    console.log("small")
+  } else {
+    console.log("big")
+  }
+} 
